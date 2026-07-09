@@ -1820,38 +1820,38 @@ ol.b {list-style-type: disc;}
 .hero-copy .eyebrow {
   display: block;
   color: #ffffff;
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 6px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .hero-copy h1 {
   color: #ffffff;
-  font-size: 42px;
+  font-size: 62px;
   line-height: 1.08;
-  margin: 0 0 9px;
+  margin: 0 0 12px;
 }
 
 .hero-copy h2 {
   color: #ffffff;
-  font-size: 17px;
-  font-weight: 600;
-  margin: 0 0 26px;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0 0 24px;
 }
 
 .hero-copy h3 {
   color: #ffffff;
-  font-size: 17px;
-  line-height: 1.55;
-  margin: 0 0 14px;
+  font-size: 23px;
+  line-height: 1.42;
+  margin: 0 0 18px;
 }
 
 .hero-copy p {
   color: #ffffff;
-  max-width: 430px;
-  font-size: 13px;
-  line-height: 1.85;
-  margin-bottom: 30px;
+  max-width: 560px;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 34px;
 }
 
 .hero-actions {
@@ -1923,7 +1923,13 @@ ol.b {list-style-type: disc;}
 }
 
 .btn-secondary-home {
+  background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.88);
+  color: #ffffff;
+}
+
+.btn-secondary-home:focus,
+.btn-secondary-home:visited {
   color: #ffffff;
 }
 
@@ -1947,16 +1953,20 @@ ol.b {list-style-type: disc;}
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
+  padding: 22px;
+  background: #36bfd9;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero-photo img {
+  width: auto;
+  height: 117%;
   max-width: none;
-  width: 168%;
-  height: 168%;
   object-fit: contain;
+  object-position: center bottom;
+  transform: translateY(4%);
 }
 
 .about-preview {
@@ -2034,7 +2044,7 @@ ol.b {list-style-type: disc;}
 }
 
 .problem-band {
-  background: #ff6658;
+  background: #f2d525;
   color: #ffffff;
   text-align: center;
   padding: 60px 0 56px;
@@ -2416,12 +2426,20 @@ ol.b {list-style-type: disc;}
   }
 
   .hero-copy h1 {
-    font-size: 34px;
+    font-size: 42px;
   }
 
-  .hero-copy h2,
+  .hero-copy h2 {
+    font-size: 21px;
+  }
+
   .hero-copy h3 {
+    font-size: 18px;
+  }
+
+  .hero-copy p {
     font-size: 15px;
+    line-height: 1.65;
   }
 
   .btn-primary-home,
