@@ -1940,6 +1940,17 @@ ol.b {list-style-type: disc;}
   min-width: 320px;
 }
 
+.btn-light-home:focus,
+.btn-light-home:visited {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #139b8b;
+}
+
+.btn-light-home:active {
+  color: #ffffff;
+}
+
 .btn-primary-home:hover,
 .btn-secondary-home:hover,
 .btn-light-home:hover,
