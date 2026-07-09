@@ -1956,7 +1956,7 @@ ol.b {list-style-type: disc;}
   max-width: none;
   width: 168%;
   height: 168%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .about-preview {
