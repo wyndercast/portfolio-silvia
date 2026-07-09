@@ -1766,7 +1766,7 @@ ol.b {list-style-type: disc;}
 .footer-logo {
   display: inline-flex;
   align-items: center;
-  width: 156px;
+  width: 225px;
   line-height: 1;
 }
 
@@ -1827,14 +1827,14 @@ ol.b {list-style-type: disc;}
 
 .hero-copy h1 {
   color: #ffffff;
-  font-size: 62px;
+  font-size: 70px;
   line-height: 1.08;
   margin: 0 0 12px;
 }
 
 .hero-copy h2 {
   color: #ffffff;
-  font-size: 25px;
+  font-size: 34px;
   font-weight: 700;
   margin: 0 0 24px;
 }
