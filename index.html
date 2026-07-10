@@ -31,7 +31,14 @@
 						<a class="home-logo" href="index.html" aria-label="LegalPets inicio">
 							<img src="assets/images/logo.png" alt="LegalPets">
 						</a>
-						<nav class="home-nav" aria-label="Navegacion principal">
+						<button class="home-menu-toggle" type="button" aria-label="Abrir menu" aria-controls="home-nav" aria-expanded="false">
+							<span></span><span></span><span></span>
+						</button>
+						<nav class="home-nav" id="home-nav" aria-label="Navegacion principal">
+							<div class="home-nav-mobile-head">
+								<span>Menu</span>
+								<button class="home-menu-close" type="button" aria-label="Cerrar menu"></button>
+							</div>
 							<a class="active" href="#inicio"><i class="fa fa-home"></i><span>Inicio</span></a>
 							<a href="#sobre-mi"><i class="fa fa-user-o"></i><span>Sobre mi</span></a>
 							<a href="#servicios"><i class="fa fa-briefcase"></i><span>Servicios</span></a>
@@ -185,5 +192,29 @@
 		<script src="assets/js/jquery.meanmenu.js"></script>
 		<script src="assets/js/animated-headline.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+			(function () {
+				var toggle = document.querySelector('.home-menu-toggle');
+				var close = document.querySelector('.home-menu-close');
+				var nav = document.querySelector('.home-nav');
+				if (!toggle || !close || !nav) return;
+
+				function setMenu(open) {
+					nav.classList.toggle('is-open', open);
+					document.body.classList.toggle('mobile-menu-open', open);
+					toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+					toggle.setAttribute('aria-label', open ? 'Cerrar menu' : 'Abrir menu');
+				}
+
+				toggle.addEventListener('click', function () { setMenu(true); });
+				close.addEventListener('click', function () { setMenu(false); });
+				nav.addEventListener('click', function (event) {
+					if (event.target.closest('a')) setMenu(false);
+				});
+				document.addEventListener('keydown', function (event) {
+					if (event.key === 'Escape') setMenu(false);
+				});
+			}());
+		</script>
 	</body>
 </html>
